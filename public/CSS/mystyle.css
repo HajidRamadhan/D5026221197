@@ -1,0 +1,30 @@
+h3 {
+    color : rgb(216, 146, 15);
+}
+
+p{
+    color : red;
+    text-align: justify;
+}
+
+body {
+    background-color: rgb(174, 198, 134);
+}
+
+.ratakanan {
+    text-align: right;
+    color :rgb(250, 0, 96);
+    font-weight: bold;
+}
+
+.kotaku1 {
+    border-style: solid;
+    border-color: rgb(171, 28, 200);
+}
+
+.fotolingkaran{
+    border-radius: 50%;
+}
+
+
+
