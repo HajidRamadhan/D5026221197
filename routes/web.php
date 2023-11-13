@@ -64,5 +64,25 @@ Route::get('/ETS', function () {
 Route::get('/Linktree', function () {
     return view('indexlatihan');
 });
+Route::get('/tentang', function () {
+    return view('tentang');
+});
+Route::get('/home', function () {
+    return view('home');
+});
+Route::get('/Kontak', function () {
+    return view('Kontak');
+});
+
 Route::get('perkalian', 'App\Http\Controllers\DosenController@index');
 Route::get('show', 'App\Http\Controllers\DosenController@showBlog');
+Route::get('/pegawai/{nama}', 'App\Http\Controllers\DosenController@shownama');
+Route::post('/formulir/proses', 'App\Http\Controllers\DosenController@proses');
+Route::get('/formulir','App\Http\Controllers\DosenController@formulir');
+
+Route::get('/blog', 'App\Http\Controllers\BlogController@home');
+Route::get('/blog/tentang', 'App\Http\Controllers\BlogController@tentang');
+Route::get('/blog/kontak', 'App\Http\Controllers\BlogController@Kontak');
+
+
+
