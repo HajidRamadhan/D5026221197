@@ -102,3 +102,9 @@ Route::post('/nilaikuliah/store','App\Http\Controllers\NilaiKuliahController@sto
 Route::get('/obat','App\Http\Controllers\obatController@index4');
 Route::get('/obat/tambah4','App\Http\Controllers\obatController@tambah4');
 Route::post('/obat/store','App\Http\Controllers\obatController@store');
+
+
+Route::get('/keranjangbelanja','App\Http\Controllers\KeranjangController@indexbelanja');
+Route::get('/keranjangbelanja/beli','App\Http\Controllers\KeranjangController@beli');
+Route::post('/keranjangbelanja/store','App\Http\Controllers\KeranjangController@store');
+Route::get('/keranjangbelanja/hapus/{id}','App\Http\Controllers\KeranjangController@hapus');
