@@ -98,3 +98,7 @@ Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
 Route::get('/nilaikuliah','App\Http\Controllers\NilaiKuliahController@indexnilaikuliah');
 Route::get('/nilaikuliah/tambahdata','App\Http\Controllers\NilaiKuliahController@tambahdata');
 Route::post('/nilaikuliah/store','App\Http\Controllers\NilaiKuliahController@store');
+
+Route::get('/obat','App\Http\Controllers\obatController@index4');
+Route::get('/obat/tambah4','App\Http\Controllers\obatController@tambah4');
+Route::post('/obat/store','App\Http\Controllers\obatController@store');
