@@ -108,3 +108,6 @@ Route::get('/keranjangbelanja','App\Http\Controllers\KeranjangController@indexbe
 Route::get('/keranjangbelanja/beli','App\Http\Controllers\KeranjangController@beli');
 Route::post('/keranjangbelanja/store','App\Http\Controllers\KeranjangController@store');
 Route::get('/keranjangbelanja/hapus/{id}','App\Http\Controllers\KeranjangController@hapus');
+
+Route::get('/kategori','App\Http\Controllers\kategoriController@index6');
+Route::post('/kategori/pilih','App\Http\Controllers\kategoriController@pilih');
